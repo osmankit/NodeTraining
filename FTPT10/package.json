@@ -1,0 +1,11 @@
+{
+  "name": "http_cluster",
+  "version": "1.0.0",
+  "description": "Set up a simple server that responds to all incoming requests with a message containing the worker process ID that processed the request.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Ankit",
+  "license": "ISC"
+}

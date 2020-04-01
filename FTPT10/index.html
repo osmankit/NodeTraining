@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/default.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Voter ID Generator</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Voter Id Generation</h1>
+        </div>
+        <div class="input_form">
+            <form class="user_details">
+                <legend>
+                    <p>Enter the details below:</p>
+                </legend>
+                <label for="firstname">First Name</label>
+                <input type="text" id="firstname" name="firstname" value=""></input>
+
+                <label for="lastname">Last Name</label>
+                <input type="text" id="lastname" name="lastname" value=""></input>
+
+                <label for="dob">Date Of Birth</label>
+                <input type="date" id="dob" name="dob" min="2001-01-01"></input>
+
+                <label for="mobile">Phone Number</label>
+                <input type="number" id="mobile" name="mobile" min="" max="" value=""></input>
+
+                <label for="gender">Gender</label>
+                <input type="radio" name="gender" id="rdomale">Male</input>
+                <input type="radio" name="gender" id="rdofemale">Female</input>
+
+                <label for="state">State</label>
+                <select id="state">
+                    <option value="Andhra Pradesh">Andhra Pradesh</option>
+                    <option value="Tamil Nadu">Tamil Nadu</option>
+                    <option value="Delhi">Delhi</option>
+                    <option value="Bihar">Bihar</option>
+                    <option value="Odisha">Odisha</option>
+                </select>
+                <label for="address">Address</label>
+                <textarea id="address" name="address" rows="2" cols="10" maxlength="200" minlength="40"></textarea>
+
+                <button type="submit" id="getFormDetails" onsubmit="getIdGenerated()">Submit</button>
+                <button type="reset" id="=resetformDetails">Reset</button>
+            </form>
+            <div class="tables">
+                <!-- <table id="details_table">
+                    <tr>
+                        <th id="tblfirstname"></th>
+                    </tr>
+                    <tr>
+                        <td id = ""></td>
+                    </tr>
+                </table> -->
+                <button type="submit" id="getTableDetails">Submit</button>
+                <button type="submit" id="getTableDetails">Update</button>
+            </div>
+        </div>
+    </div>
+</body>
+<script src='./js/jquery.js'></script>
+<script src='./js/script.js'></script>
+
+</html>
