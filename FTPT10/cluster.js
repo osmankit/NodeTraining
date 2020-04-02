@@ -14,5 +14,6 @@ if (cluster.isMaster) {
     }
 } else {
     console.log("Worker Process id - ", process.pid);
+    module.exports = process.pid;
     require('./server');
 }
